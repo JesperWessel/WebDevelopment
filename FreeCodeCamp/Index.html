@@ -5,6 +5,9 @@
     <p>Click here to view more <a href="#">cat photos</a>.</p>
 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <div id="ball"></div>
+
     <style>
         .red-text {
             color: red;
@@ -31,6 +34,7 @@
         .smaller-image {
             width: 100px;
             margin: auto;
+            size: 90px;
         }
         
         .silver-background {
@@ -39,6 +43,26 @@
         
         #cat-photo-form {
             background-color: green;
+        }
+        
+        #ball {
+            width: 70px;
+            height: 70px;
+            margin: 50px auto;
+            position: fixed;
+            left: 20%;
+            border-radius: 50%;
+            background: linear-gradient( 35deg, #ccffff, #ffcccc);
+            animation-name: fade;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes fade {
+            50% {
+                left: 60%;
+                opacity: 0.1;
+            }
         }
         
         .penguin {
@@ -214,6 +238,25 @@
         .penguin * {
             position: absolute;
         }
+        
+        button {
+            border-radius: 5px;
+            color: white;
+            background-color: #0F5897;
+            padding: 5px 10px 8px 10px;
+        }
+        
+        button:hover {
+            animation-name: background-color;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes background-color {
+            100% {
+                background-color: #4791d0;
+            }
+        }
     </style>
 
     <h2 class="red-text">CatPhotoApp</h2>
@@ -236,6 +279,9 @@
                 <li>other cats</li>
             </ol>
         </div>
+
+
+        <a href="Star_sky.html"><button>See the blinking stars</button></a>
 
         <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
             <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
@@ -275,4 +321,4 @@
     </main>
 
 
-    <footer id=Bottom>The end</footer>
+    <footer id=Bottom> The end </footer>
