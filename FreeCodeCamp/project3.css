@@ -1,0 +1,22 @@
+#main {
+    font-family: system-ui;
+    background: #f06d06;
+    color: white;
+    text-align: center;
+}
+
+#nav-bar {
+    position: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+#video {
+    display: flex;
+    margin: auto;
+}
